@@ -17,7 +17,7 @@ namespace CMP1903_A1_2324 {
       Console.WriteLine($"Testing die with {rolls} roll(s)...");
 
       Die die = new Die();
-      for (int i = 0; i < 32767; i++) {
+      for (int i = 0; i < rolls; i++) {
         int roll = die.Roll();
         Debug.Assert(1 <= roll && roll <= 6, "Die roll out of expected range!"); // Roll between 1 and 6
       }

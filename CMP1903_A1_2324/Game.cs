@@ -53,7 +53,8 @@ namespace CMP1903_A1_2324 {
       RollsCompleted = 0;
       _currentIteration = 0;
 
-      while (Condition()) {
+      // (_choice != 'n) or (_testingIterations > _currentIteration) depending of whether testing is enabled
+      while (_condition()) {
         if (_testingIterations == 0) {
           Console.Write("Would you like to roll? (y/n): ");
           _choice = Console.ReadLine()[0];
@@ -94,7 +95,7 @@ namespace CMP1903_A1_2324 {
     /// <returns>
     /// Whether or not to continue the game.
     /// </returns>
-    private bool Condition() {
+    private bool _condition() {
       if (_testingIterations == 0) {
         return _choice != 'n';
       } else {

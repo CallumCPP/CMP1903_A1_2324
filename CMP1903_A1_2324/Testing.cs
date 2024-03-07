@@ -13,7 +13,7 @@ namespace CMP1903_A1_2324 {
   internal class Testing {
     /// <summary>
     /// Tests the Die class by rolling a die many times. <br/>
-    /// Checks that each roll is between 1 and 6
+    /// Checks that each roll is between 1 and 6.
     /// </summary>
     /// <param name="rolls">
     /// How many rolls to test the Die class with.
